@@ -7,6 +7,7 @@ public class LocalTest extends BrowserStackTestNGTest {
 
     @Test
     public void test() throws Exception {
-        driver.get("https://expired.badssl.com/");
+        //driver.get("https://expired.badssl.com/");
+        driver.get("http://bs-local.com:45691/check");
     }
 }
