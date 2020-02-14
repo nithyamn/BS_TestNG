@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+    agent any
     environment { 
         BROWSERSTACK_USERNAME = 'nithyamani3'
         BROWSERSTACK_ACCESS_KEY = 'P4JKysg5WuchQxBfKQu1'
