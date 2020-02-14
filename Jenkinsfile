@@ -5,7 +5,7 @@ pipeline {
         BROWSERSTACK_ACCESS_KEY = 'P4JKysg5WuchQxBfKQu1'
     }
     stages {
-        stage('build') {
+        stage('Test') {
             steps {
                 sh 'mvn test -P single'
             }
