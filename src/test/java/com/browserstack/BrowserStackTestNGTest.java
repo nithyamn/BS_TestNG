@@ -58,6 +58,7 @@ public class BrowserStackTestNGTest {
 
         if (capabilities.getCapability("browserstack.local") != null
                 && capabilities.getCapability("browserstack.local") == "true") {
+            System.out.println("Running code bindings...")
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
             options.put("key", accessKey);
@@ -71,8 +72,8 @@ public class BrowserStackTestNGTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown() throws Exception {
         driver.quit();
-        /*if (l != null) {
+        if (l != null) {
             l.stop();
-        }*/
+        }
     }
 }
