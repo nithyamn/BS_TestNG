@@ -58,7 +58,7 @@ public class BrowserStackTestNGTest {
 
         if (capabilities.getCapability("browserstack.local") != null
                 && capabilities.getCapability("browserstack.local") == "true") {
-            System.out.println("Running code bindings...")
+            System.out.println("Running code bindings...");
             l = new Local();
             Map<String, String> options = new HashMap<String, String>();
             options.put("key", accessKey);
