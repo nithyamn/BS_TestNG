@@ -7,5 +7,6 @@ node{
                                    '''
             }
         }
+        junit testDataPublishers: [[$class: 'AutomateTestDataPublisher']], testResults: 'target/surefire-reports/TEST-*.xml'
     }
 }
